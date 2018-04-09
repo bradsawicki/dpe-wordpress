@@ -19,6 +19,7 @@ var gulp = require('gulp'),
 gulp.task('browser-sync', function() {
   browserSync.init({
     proxy: 'http://mohammad.localhost.com',
+    // proxy: 'eller.dev',
     port: 8000
   });
 });
