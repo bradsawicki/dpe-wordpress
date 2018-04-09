@@ -1,7 +1,13 @@
 
 .header .container {
-	padding-top: $base;
-	padding-bottom: $base;
+	padding-top: 18px;
+	padding-bottom: 18px;
+
+	@include bp-min-width($medium) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 }
 
 .logo {

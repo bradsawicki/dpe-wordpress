@@ -1,0 +1,44 @@
+
+.home-hero {
+	background-image: $home-hero;
+}
+
+.home-hero .container {
+	@include bp-min-width($medium) {
+		padding-top: $base*8;
+		padding-bottom: $base*8;
+	}
+}
+
+.home-about {
+	display: flex;
+}
+
+.home-about__image,
+.home-about__content {
+	@include bp-min-width($medium) {
+		width: 50%;
+	}
+}
+
+.home-about__image {
+	background: $dk-blue $home-about no-repeat center;
+	background-size: cover;
+
+	@include bp-max-width($medium) {
+		height: 300px;
+	}
+}
+
+.home-about__content {
+	padding: $base*2 20px;
+	background: $lt-grey;
+
+	@include bp-min-width($medium) {
+		padding: $base*3 5%;
+	}
+}
+
+.home-about__title {
+	margin-bottom: 12px;
+}

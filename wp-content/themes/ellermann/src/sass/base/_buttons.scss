@@ -1,0 +1,23 @@
+
+a {
+	transition: all .1s ease-in;
+}
+
+.btn {
+	display: inline-block;
+	width: 200px;
+	padding: 12px;
+	border: 2px solid $blue;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.btn--white {
+	border-color: #fff;
+	color: #fff;
+
+	&:hover {
+		background-color: #fff;
+		color: $blue;
+	}
+}

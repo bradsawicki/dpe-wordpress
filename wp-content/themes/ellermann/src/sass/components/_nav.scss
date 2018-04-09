@@ -1,0 +1,20 @@
+
+.main-nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-nav li {
+	margin: 0 20px;
+}
+
+.main-nav a {
+	@include font-size(14px);
+	display: inline-block;
+	font-family: $sans-title;
+	color: $blue;
+	font-weight: $weight-medium;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}

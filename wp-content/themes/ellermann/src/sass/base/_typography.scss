@@ -14,6 +14,7 @@ $weight-bold:    700;
 
 body {
   font: $weight-regular 1em/1.5em $sans-text;
+  color: $blue;
 }
 
 h1, h2, h3, h4, h5 {
@@ -30,22 +31,28 @@ em {
 
 .title__h1 {
   @include font-units(30px, 36px);
+  font-family: $sans-title;
+  font-weight: $weight-medium;
 
   @include bp-min-width($medium) {
-    @include font-units(60px, 66px);
+    @include font-units(54px, 60px);
   }
 }
 
 .title__h2 {
-  @include font-units(24px, 30px);
+  @include font-units(21px, 27px);
+  font-family: $sans-title;
+  font-weight: $weight-medium;
 
   @include bp-min-width($medium) {
-    @include font-units(48px, 54px);
+    @include font-units(24px, 30px);
   }
 }
 
 .title__h3 {
-  @include font-units(18px, 27px);
+  @include font-units(21px, 30px);
+  font-family: $sans-title;
+  font-weight: $weight-medium;
 }
 
 
