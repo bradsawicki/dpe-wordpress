@@ -1,0 +1,107 @@
+
+/**
+Class Naming Structure: block--element__modifier
+**/
+
+$sans-text: 'Lato', Helvetica, arial, sans-serif;
+$sans-title: 'Montserrat', Helvetica, arial, sans-serif;
+
+$base: 24px;
+
+$weight-regular: 400;
+$weight-medium:  600;
+$weight-bold:    700;
+
+body {
+  font: $weight-regular 1em/1.5em $sans-text;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1;
+}
+
+strong, b {
+  font-weight: $weight-bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.title__h1 {
+  @include font-units(30px, 36px);
+
+  @include bp-min-width($medium) {
+    @include font-units(60px, 66px);
+  }
+}
+
+.title__h2 {
+  @include font-units(24px, 30px);
+
+  @include bp-min-width($medium) {
+    @include font-units(48px, 54px);
+  }
+}
+
+.title__h3 {
+  @include font-units(18px, 27px);
+}
+
+
+.body-content h1,
+.body-content h2 {
+
+  @include bp-min-width($medium) {
+		@include font-units(24px, 30px);
+  }
+}
+
+.body-content p + h1,
+.body-content p + h2 {
+  padding-top: $base;
+}
+
+.body-content h3,
+.body-content h4 {
+  @include font-units(18px, 27px);
+}
+
+.body-content p,
+.body-content ul,
+.body-content ol {
+  @include bp-min-width($medium) {
+    @include font-units(18px, 27px);
+  }
+}
+
+.body-content,
+.section-content {
+  p:not(:last-child),
+  ul:not(:last-child),
+  ol:not(:last-child),
+  blockquote:not(:last-child) {
+    margin-bottom: 1.25em;
+  }
+}
+
+.body-content ul,
+.body-content ol {
+  padding-left: 1.5em;
+}
+
+.body-content ul {
+  list-style: disc;
+}
+
+.body-content ol {
+  list-style: decimal;
+}
+
+.body-content a {
+  color: $blue;
+
+  &:hover {
+    color: #000;
+  }
+}

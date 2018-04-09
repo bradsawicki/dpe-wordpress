@@ -10,6 +10,8 @@ Description: Custom theme for Ellermann Brokerage
 @import "base/reset";
 @import "base/media-queries";
 @import "base/colors";
-
+@import "base/mixins";
+@import "base/typography";
 
 @import "components/header";
+@import "components/footer";
