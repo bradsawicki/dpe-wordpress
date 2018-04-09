@@ -1,8 +1,12 @@
 
+.header {
+	box-shadow: 0 1px 0 rgba(0,0,0,.1)
+}
+
 .header .container {
 	position: relative;
-	padding-top: 18px;
-	padding-bottom: 18px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 
 	@include bp-min-width($medium) {
 		display: flex;
@@ -11,7 +15,10 @@
 	}
 }
 
-.logo {
-	width: 234px;
-	height: 60px;
+.logo img {
+	height: 54px;
+}
+
+.sperry-logo img {
+	height: 36px;
 }

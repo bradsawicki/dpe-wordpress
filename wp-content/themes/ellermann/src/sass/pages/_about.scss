@@ -1,0 +1,43 @@
+
+.about__title {
+	margin-bottom: $base*3;
+}
+
+.team-list {
+	max-width: 912px;
+	margin: 0 auto;
+}
+
+.team-list__item {
+	display: flex;
+}
+
+.team-list__item:not(:last-child) {
+	@include bp-min-width($medium) {
+		margin-bottom: $base*4;
+	}
+}
+
+.team-list__image {
+	width: 33%;
+}
+
+.team-list__content {
+	width: 66.666%;
+	padding-left: 40px;
+}
+
+.team-list__title {
+	margin-bottom: 12px;
+}
+
+.team-list__bio {
+	margin-bottom: $base;
+}
+
+.team-list__phone,
+.team-list__email {
+	@include font-size(15px);
+	font-family: $sans-title;
+	font-weight: $weight-medium;
+}

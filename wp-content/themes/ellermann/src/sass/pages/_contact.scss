@@ -1,0 +1,20 @@
+
+.contact__title {
+	margin-bottom: $base*2;
+}
+
+.contact__info {
+	@include font-units(17px, 27px);
+	display: flex;
+	max-width: 608px;
+	margin: 0 auto $base*2;
+}
+
+.contact__info-col {
+	width: 50%;
+}
+
+.nf-form-cont {
+	max-width: 608px;
+	margin: 0 auto;
+}

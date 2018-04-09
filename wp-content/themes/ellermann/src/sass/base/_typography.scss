@@ -79,11 +79,13 @@ em {
   @include font-units(18px, 27px);
 }
 
-.body-content p,
-.body-content ul,
-.body-content ol {
-  @include bp-min-width($medium) {
-    @include font-units(18px, 27px);
+.body-content {
+  p,
+  ul,
+  ol {
+    @include bp-min-width($medium) {
+      @include font-units(15px, 24px);
+    }
   }
 }
 

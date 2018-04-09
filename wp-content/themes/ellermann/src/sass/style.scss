@@ -15,6 +15,7 @@ Description: Custom theme for Ellermann Brokerage
 @import "base/typography";
 @import "base/buttons";
 @import "base/layout";
+@import "base/forms";
 
 @import "components/header";
 @import "components/nav";
@@ -23,3 +24,5 @@ Description: Custom theme for Ellermann Brokerage
 @import "components/hero";
 
 @import "pages/home";
+@import "pages/about";
+@import "pages/contact";

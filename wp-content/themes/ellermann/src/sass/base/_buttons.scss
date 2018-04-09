@@ -1,9 +1,14 @@
 
 a {
 	transition: all .1s ease-in;
+	color: $blue;
+
+	&:hover {
+		color: $dk-blue;
+	}
 }
 
-.btn {
+@mixin btn {
 	@include font-size(14px);
 	display: inline-block;
 	width: 220px;
@@ -21,6 +26,10 @@ a {
 		background: $blue;
 		color: #fff;
 	}
+}
+
+.btn {
+	@include btn;
 }
 
 .btn--white {
