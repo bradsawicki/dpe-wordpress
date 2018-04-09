@@ -9,6 +9,9 @@
       $state = get_field('state', 'options');
       $zip = get_field('zip', 'options');
 
+      $contact_phone = get_field('contact_phone', 'options');
+      $contact_email = get_field('contact_email', 'options');
+
       $facebook = get_field('facebook_url', 'options');
       $twitter = get_field('twitter_url', 'options');
       $linkedin = get_field('linkedin_url', 'options');
@@ -45,7 +48,8 @@
             <a href="<?php bloginfo('url'); ?>/contact-us/">Contact</a>
           </p>
           <p><?php echo $address; ?>, <?php echo $city; ?>, <?php echo $state; ?> <?php echo $zip; ?></p>
-          <p>&copy;<?php echo date('Y'); ?> Ellermann Commercial Brokerage.</p>
+          <p>&copy;<?php echo date('Y'); ?> Ellermann Commercial Brokerage | <?php echo $contact_phone; ?></p>
+
           <p><a href="http://bradsawicki.com" target="_blank">Site by: Brad Sawicki</a></p>
         </div>
 
