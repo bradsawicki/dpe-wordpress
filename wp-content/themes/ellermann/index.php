@@ -1,10 +1,11 @@
 <?php get_header(); ?>
-<section id="content" role="main">
-  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-  <?php get_template_part( 'entry' ); ?>
-  <?php comments_template(); ?>
-  <?php endwhile; endif; ?>
-  <?php get_template_part( 'nav', 'below' ); ?>
-</section>
-<?php get_sidebar(); ?>
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  <section>
+
+    <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+
+  </section>
+<?php endwhile; endif; ?>
+
 <?php get_footer(); ?>
