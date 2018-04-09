@@ -7,36 +7,21 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <div id="wrapper" class="hfeed">
-      <!-- <header id="header" role="banner">
-        <section id="branding">
-          <div id="site-title"><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; } ?></div>
-          <div id="site-description"><?php bloginfo( 'description' ); ?></div>
-        </section>
-        <nav id="menu" role="navigation">
-          <div id="search">
-            <?php get_search_form(); ?>
-          </div>
-          <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-        </nav>
-      </header> -->
 
-      <header class="header">
-        <div class="container">
+    <header class="header">
+      <div class="container">
 
-          <h1 id="site-title">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home">
-              <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
-            </a>
-          </h1>
+        <h1 id="site-title">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home">
+            <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+          </a>
+        </h1>
 
-          <div class="nav">
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
+        <div class="nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
-      </header>
-
-      <div id="container">
+      </div>
+    </header>

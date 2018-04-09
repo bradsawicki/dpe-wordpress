@@ -1,1 +1,1 @@
-"# dpe-wordpress" 
+# Custom Wordpress Theme
