@@ -25,3 +25,8 @@ add_filter( 'wp_title', 'dpe_filter_wp_title' );
 function dpe_filter_wp_title( $title ) {
 	return $title . esc_attr( get_bloginfo( 'name' ) );
 }
+
+// ACF Options Page
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}

@@ -4,12 +4,23 @@ a {
 }
 
 .btn {
+	@include font-size(14px);
 	display: inline-block;
-	width: 200px;
-	padding: 12px;
+	width: 220px;
+	padding: 13px 10px;
 	border: 2px solid $blue;
 	border-radius: 3px;
+	color: $blue;
+	font-family: $sans-title;
+	font-weight: $weight-medium;
+	letter-spacing: .1em;
 	text-align: center;
+	text-transform: uppercase;
+
+	&:hover {
+		background: $blue;
+		color: #fff;
+	}
 }
 
 .btn--white {
@@ -20,4 +31,12 @@ a {
 		background-color: #fff;
 		color: $blue;
 	}
+}
+
+.cta-link {
+	@include font-size(13px);
+	font-family: $sans-title;
+	font-weight: $weight-medium;
+	letter-spacing: .1em;
+	text-transform: uppercase;
 }

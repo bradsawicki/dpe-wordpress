@@ -1,4 +1,8 @@
 
+.main-nav {
+	@include absolute-center;
+}
+
 .main-nav ul {
 	display: flex;
 	align-items: center;

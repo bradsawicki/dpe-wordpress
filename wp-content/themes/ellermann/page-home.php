@@ -3,6 +3,7 @@
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
   <section class="home-hero hero">
     <div class="container">
 
@@ -16,7 +17,11 @@
   <section class="featured-properties">
     <div class="container">
 
-      <h2 class="title__h2">Featured Properties</h2>
+      <h2 class="featured-properties__title section-title title__h2">Featured Properties</h2>
+
+      <footer class="featured-properties__footer">
+        <p><a href="#" class="btn">All Properties</a></p>
+      </footer>
 
     </div>
   </section>

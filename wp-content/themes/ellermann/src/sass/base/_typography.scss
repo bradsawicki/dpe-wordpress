@@ -55,6 +55,11 @@ em {
   font-weight: $weight-medium;
 }
 
+.section-title {
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 .body-content h1,
 .body-content h2 {
