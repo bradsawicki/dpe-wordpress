@@ -50,9 +50,13 @@ em {
 }
 
 .title__h3 {
-  @include font-units(21px, 30px);
+  @include font-units(19px, 27px);
   font-family: $sans-title;
   font-weight: $weight-medium;
+
+  @include bp-min-width($medium) {
+    @include font-units(21px, 30px);
+  }
 }
 
 .section-title {

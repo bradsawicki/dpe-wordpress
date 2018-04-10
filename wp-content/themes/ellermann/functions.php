@@ -30,6 +30,9 @@ function dpe_filter_wp_title( $title ) {
 add_image_size( 'team-thumb', 278, 278, true );
 add_image_size( 'team-thumb-2x', 556, 556, true );
 
+add_image_size( 'property-thumb', 278, 228, true );
+add_image_size( 'property-thumb-2x', 556, 456, true );
+
 add_image_size( 'footer-profile-thumb', 144, 144, true );
 add_image_size( 'footer-profile-thumb-2x', 288, 288, true );
 

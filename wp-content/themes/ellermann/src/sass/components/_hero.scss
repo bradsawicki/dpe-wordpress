@@ -12,7 +12,11 @@
 }
 
 .hero__subtitle {
-	@include font-units(21px, 30px);
+	@include font-units(19px, 27px);
 	max-width: 800px;
 	margin: 0 auto 36px;
+
+	@include bp-min-width($medium) {
+    @include font-units(21px, 30px);
+  }
 }

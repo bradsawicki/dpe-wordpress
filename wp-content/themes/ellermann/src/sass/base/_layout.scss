@@ -15,7 +15,6 @@
   }
 }
 
-
 @mixin is-hidden {
   position: absolute;
   overflow: hidden;
@@ -33,4 +32,8 @@
 
 .js-no-scroll {
   overflow: hidden;
+}
+
+#buildout {
+  background: $lt-grey;
 }
