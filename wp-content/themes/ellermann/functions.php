@@ -1,10 +1,9 @@
 <?php
 add_action( 'after_setup_theme', 'dpe_setup' );
 function dpe_setup() {
-	load_theme_textdomain( 'blankslate', get_template_directory() . '/languages' );
 	add_theme_support( 'title-tag' );
-	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-thumbnails' );
+	register_nav_menu( 'primary', __( 'Primary Menu', 'dpe' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'dpe_load_scripts' );
