@@ -16,12 +16,12 @@
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.svg" alt="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>"></a>
         </div>
 
-        <div class="main-nav">
-          <?php wp_nav_menu( array('menu'=>'1', 'container'=>'') ); ?>
-        </div>
-
         <div class="sperry-logo">
           <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-sperry.svg" alt="">
+        </div>
+
+        <div class="main-nav">
+          <?php wp_nav_menu( array('menu'=>'1', 'container'=>'') ); ?>
         </div>
 
       </div>
