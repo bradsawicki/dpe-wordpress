@@ -1,6 +1,10 @@
 
 .about__title {
-	margin-bottom: $base*3;
+	margin-bottom: $base*1.5;
+
+	@include bp-min-width($medium) {
+		margin-bottom: $base*3;
+	}
 }
 
 .team-list {
@@ -9,22 +13,34 @@
 }
 
 .team-list__item {
-	display: flex;
+	@include bp-min-width($medium) {
+		display: flex;
+	}
 }
 
 .team-list__item:not(:last-child) {
+	margin-bottom: $base*2;
+
 	@include bp-min-width($medium) {
 		margin-bottom: $base*4;
 	}
 }
 
 .team-list__image {
-	width: 33%;
+	@include bp-max-width($medium) {
+		margin-bottom: 18px;
+	}
+
+	@include bp-min-width($medium) {
+		width: 33%;
+	}
 }
 
 .team-list__content {
-	width: 66.666%;
-	padding-left: 40px;
+	@include bp-min-width($medium) {
+		width: 66.666%;
+		padding-left: 40px;
+	}
 }
 
 .team-list__title {
