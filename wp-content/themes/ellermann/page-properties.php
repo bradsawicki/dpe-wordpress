@@ -13,7 +13,7 @@
       <script type="text/javascript" src="//buildout.com/api.js?v8"></script>
       <script type="text/javascript">
       	BuildOut.embed({
-      		token:     "1e870beae6e5127a301814258bfa58158c22d2b4",
+      		token:     "b4b32aa7216aa70cc08e5607b101559271ebdbf4",
       		plugin:    "inventory",
       		target:    "buildout"
       	});
